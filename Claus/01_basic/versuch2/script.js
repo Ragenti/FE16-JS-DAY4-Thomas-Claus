@@ -52,6 +52,31 @@ nameInput.forEach(element => {
 
 const profSelect = document.querySelectorAll(".form-control")
 
-var colorDiv = function() {
-    var selIt = getElementById("id").onclick.sytle
+document.getElementById("it").addEventListener("click", colorDiv)
+
+function colorDiv() {
+    items.sytle.color = "red";
 }
+
+//ex 2
+
+var box = document.getElementById("list");
+const sel = document.getElementById("select");
+
+// let value = sel.options[sel.selectedIndex].value;
+// if (value = "IT"){box[0].style.backgroundColor="yellow"}
+//     else
+//     {box[0].style.backgroundColor="red"}
+
+box[0].style.backgroundColor="yellow";
+
+function onSelect(){
+
+    var value = sel.options[sel.selectedIndex].value;
+    
+    if (value == "IT"){box.style.backgroundColor = "yellow"}
+    else
+    {box[0].style.backgroundColor="red"}
+}
+
+sel.addEventListener("change", onSelect);
