@@ -60,11 +60,11 @@ var bgc = document.getElementById("back");
 function backgroundChange(){
 
     //für Graustufen immer die selbe Variable nehmen
-    let farbe = Math.floor(Math.random()*251);
+    let farbe = Math.floor(Math.random()*256);
 
-    let farbe2 = Math.floor(Math.random()*251);
+    let farbe2 = Math.floor(Math.random()*256);
 
-    let farbe3 = Math.floor(Math.random()*251);
+    let farbe3 = Math.floor(Math.random()*256);
 
     bgc.style.backgroundColor = "rgb("+farbe+", "+farbe2+", "+farbe3+")";
 }
