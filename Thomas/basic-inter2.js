@@ -1,3 +1,4 @@
+//basic ex 1
 var box = document.getElementsByClassName("separate");
 
 const text = document.getElementsByClassName("input");
@@ -28,7 +29,7 @@ age2.addEventListener("blur", getVal);
 //onblur="getVal()"
 
 
-//ex 2
+//basic ex 2
 
 const sel = document.getElementById("select");
 
@@ -58,9 +59,14 @@ var bgc = document.getElementById("back");
 
 function backgroundChange(){
 
-    let value = Math.floor(Math.random()*251);
+    //für Graustufen immer die selbe Variable nehmen
+    let farbe = Math.floor(Math.random()*256);
 
-    bgc.style.backgroundColor = rgb(value, value, value);
+    let farbe2 = Math.floor(Math.random()*256);
+
+    let farbe3 = Math.floor(Math.random()*256);
+
+    bgc.style.backgroundColor = "rgb("+farbe+", "+farbe2+", "+farbe3+")";
 }
 
-button.addEventListener("click", backgroundChange);
+button.addEventListener("mousedown", backgroundChange);
