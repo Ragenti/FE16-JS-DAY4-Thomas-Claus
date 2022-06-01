@@ -1,63 +1,47 @@
-// ex1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DAY4 - Intermediate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
 
-const nameInput = document.querySelectorAll(".form-control")
-const result = document.getElementById("result")
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-4" id="item1">
+          <img type="button" height="300px" class="img mx-auto d-block gift-btn" src="images/gift.webp">
+        </div>
+        <div class="col-4" id="item2">
+          <img type="button" height="300px" class="img mx-auto d-block santa-btn" src="images/santa-claus.png">
+        </div>
+        <div class="col-4" id="item3">
+          <img type="button" height="300px" class="img mx-auto d-block gift-btn" src="images/gift.webp">
+        </div>
+        <div class="col-4" id="item4">
+          <img type="button" height="300px" class="img  mx-auto d-block gift-btn" src="images/gift.webp">
+        </div>
+        <div class="col-4" id="item5">
+          <img type="button" height="300px" class="img  mx-auto d-block santa-btn" src="images/santa-claus.png">
+        </div>
+        <div class="col-4" id="item6">
+          <img type="button" height="300px" class="img  mx-auto d-block santa-btn" src="images/gift.webp">
+        </div>
+        <div class="col-4" id="item7">
+          <img type="button" height="300px" class="img  mx-auto d-block santa-btn" src="images/santa-claus.png">
+        </div>
+        <div class="col-4" id="item8">
+          <img type="button" height="300px" class="img  mx-auto d-block gift-btn" src="images/gift.webp">
+        </div>
+        <div class="col-4" id="item9">
+          <img type="button" height="300px" class="img  mx-auto d-block santa-btn" src="images/santa-claus.png">
+        </div>
+      </div>
+    </div>
 
-const validateInput = (e) => {
-    if(e.target.value.length < 5) {
-        e.target.style.color = "red"
-    } else {
-        e.target.style.color = "green"
-    }
-}
-
-const firstNameInput = document.querySelector("#firstname");
-const lastNameInput = document.querySelector("#lastname");
-const addData = document.querySelector(".add-data")
-
-var itemList = []
-
-const printItems = () => {
-    result.innerHTML = "";
-    itemList.forEach((item) => {
-        result.innerHTML += `<li class="list-group-item">${item}</li>`;
-    });
-};
-
-const addItems = () => {
-    nameInput.forEach(elem => {
-        console.log("added: "+elem.value)
-        if(elem.value.length != 0) {
-            itemList.push(elem.value)
-        }
-        elem.value = "";
-    });
-    console.log("items: "+itemList)
-    console.log(itemList.length)
-    if(itemList.length != 0) {
-        printItems()
-    }
-};
-
-addData.addEventListener("click", addItems)
-
-// ex2
-
-nameInput.forEach(element => {
-    element.addEventListener("input", validateInput);
-});
-
-const jobInput = document.querySelector("#job-select")
-
-const validateJob = (e) => {
-    console.log("e.value = "+e.target.value)
-    if(e.target.value == 1) {
-        document.body.style.backgroundColor = "purple"
-    } else if(e.target.value == 2) {
-        document.body.style.backgroundColor = "yellow"
-    } else if(e.target.value == 3) {
-        document.body.style.backgroundColor = "green"
-    } 
-}
-
-jobInput.addEventListener("input", validateJob);
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
