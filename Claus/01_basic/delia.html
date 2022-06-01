@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4 - Events</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="btn btn-info test-btn">Click me</div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input test-checkbox"
+          type="checkbox"
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Test checkbox
+        </label>
+      </div>
+
+      <div class="item item-1">
+        <div class="item item-2">
+          <div class="item-3"></div>
+        </div>
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <label for="todoList" class="form-label">Add a todo</label>
+          <input type="text" class="form-control" id="todo-item" />
+          <p id="error-message">
+            * The todo item should have more than 4 characters.
+          </p>
+        </div>
+        <button type="button" class="btn btn-success add-todo">Submit</button>
+      </form>
+
+      <h3 class="mt-5">My todo list</h3>
+
+      <ul class="list-group mt-5 todo-list">
+        <li class="list-group-item">Item Test</li>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
